@@ -28,4 +28,43 @@
     border-radius: 80px;
 }
 
-//
+//main img-------------
+
+.heading {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.main-img {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/Rectangle.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+
+    @media (max-width: ($md3 + px)) {
+        height: 500px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+
+        .button {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin: 0 0 21px;
+    }
+
+    &__text {
+        margin: 0 0 32px;
+    }
+}

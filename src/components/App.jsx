@@ -1,5 +1,5 @@
 import './App.scss';
-import logo from '../assets/images/icons/logo.svg';
+import logo from '../assets/images/icons/Logo.svg';
 
 function App() {
   return (
@@ -12,9 +12,6 @@ function App() {
             <div className='logo__img'>
               <img src={logo} alt='logo' />
             </div>
-            <div className='logo__label'>
-              <span>TESTTASK</span>
-            </div>
           </div>
 
           <div className='header__btns-container'>
@@ -24,6 +21,17 @@ function App() {
 
         </div>
       </header>
+
+      <section className='main-img _container'>
+
+        <div className='main-img__content'>
+          <span className='main-img__title heading'>Test assignment for front-end developer</span>
+          <span className='main-img__text'>What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.</span>
+
+          <button className='button'>Sing up</button>
+        </div>
+
+      </section>
 
     </div>
   );
