@@ -1,5 +1,6 @@
 import './App.scss';
 import logo from '../assets/images/icons/Logo.svg';
+import userPhoto from '../assets/images/photo-cover.svg';
 
 function App() {
   return (
@@ -31,6 +32,119 @@ function App() {
           <button className='button'>Sing up</button>
         </div>
 
+      </section>
+
+      <section className='get-method _container'>
+
+        <span className='heading'>Working with GET request</span>
+
+        <div className='get-method__content'>
+
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador StewartSalvador StewartSalvador StewartSalvador </span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador Stewart</span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador Stewart</span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador Stewart</span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador Stewart</span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+          <div className='user-card'>
+            <div className='user-card__photo'>
+              <img src={userPhoto} alt="user photo" />
+            </div>
+            <div className='user-card__name'>
+              <span>Salvador Stewart</span>
+            </div>
+            <div className='user-card__profession'>
+              <span>Leading specialist </span>
+            </div>
+            <div className='user-card__email'>
+              <span>frontend_develop@gmail.com</span>
+            </div>
+            <div className='user-card__phone'>
+              <span>+38 (098) 278 44 24</span>
+            </div>
+          </div>
+
+        </div>
+        <button className='button button_show-more'>Show more</button>
       </section>
 
     </div>
