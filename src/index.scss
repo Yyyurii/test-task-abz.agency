@@ -3,3 +3,19 @@
 @import './assets/styles/_mixins';
 @import './assets/styles/_fonts';
 
+._container {
+	max-width: $maxWidthContainer + px;
+	width: 100%;
+	margin: 0 auto;
+	@media (max-width: ($md1 + px)) {
+		max-width: 970px;
+	}
+	@media (max-width: ($md2 + px)) {
+		max-width: 750px;
+	}
+	@media (max-width: ($md3 + px)) {
+		max-width: none;
+		padding: 10px 10px;
+	}
+}
+

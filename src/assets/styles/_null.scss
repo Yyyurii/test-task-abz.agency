@@ -19,16 +19,16 @@ section {
 }
 html {
 	font-size: #{$fontSize + px};
-	line-height: $lineHeight;
+	line-height: 26px;
 }
 html,
 body {
 	height: 100%;
-	line-height: $lineHeight;
 	min-width: $minWidth;
+	line-height: 26px;
 }
 body {
-	line-height: 1;
+	line-height: 26px;
 	font-family: $fontFamily;
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
@@ -40,6 +40,7 @@ button,
 textarea {
 	font-family: $fontFamily;
 	font-size: inherit;
+	line-height: 26px;
 }
 input::-ms-clear {
 	display: none;

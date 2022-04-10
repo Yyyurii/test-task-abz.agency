@@ -1,12 +1,31 @@
+@import "../assets/styles/variable";
+
+//header---------------------------------
 
 .header {
-    width: 200px;
-    height: 300px;
-    background-color: rgb(94, 94, 240);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
 
-    &__div {
-        width: 100px;
-        height: 100px;
-        background-color: rgb(238, 238, 131);
+    &__btns-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: $primaryColor;
+    padding: 4px 0px;
+    width: 100px;
+    border-radius: 80px;
+}
+
+//
