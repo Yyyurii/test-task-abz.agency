@@ -20,7 +20,7 @@
 }
 
 .form {
-    margin: 50px auto;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     max-width: 380px;
@@ -30,7 +30,7 @@
         width: 100%;
         height: 54px;
         padding: 0 16px;
-        margin: 50px auto;
+        margin: 50px 0 0;
         border: 1px solid #d0cfcf;
         box-sizing: border-box;
         border-radius: 4px;
@@ -40,18 +40,23 @@
 
     &__checkbox-container {
         text-align: left;
+        margin: 43px 0 0 ;
 
         p {
             margin: 0 0 11px;
         }
 
         input {
-            margin: 0 12px 7px 0;
+            margin: 0 12px 0;
+        }
+
+        div {
+            margin: 0 0 7px;
         }
     }
 
     &__upload {
-        margin: 50px 0;
+        margin: 38px 0 49px;
         display: flex;
 
         button,
