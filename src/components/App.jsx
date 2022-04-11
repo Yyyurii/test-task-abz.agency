@@ -1,27 +1,14 @@
 import './App.scss';
-import logo from '../assets/images/icons/Logo.svg';
+
+import Header from './header';
+
 import userPhoto from '../assets/images/photo-cover.svg';
 
 function App() {
   return (
     <div className='App'>
 
-      <header className='header _container'>
-        <div className='header__container'>
-
-          <div className='logo'>
-            <div className='logo__img'>
-              <img src={logo} alt='logo' />
-            </div>
-          </div>
-
-          <div className='header__btns-container'>
-            <button className='button'>Users</button>
-            <button className='button'>Sing up</button>
-          </div>
-
-        </div>
-      </header>
+      <Header />
 
       <section className='main-img _container'>
 
@@ -44,7 +31,7 @@ function App() {
               <img src={userPhoto} alt="user photo" />
             </div>
             <div className='user-card__name'>
-              <span>Salvador StewartSalvador StewartSalvador StewartSalvador </span>
+              <span title="Salvador StewartSalvador StewartSalvador StewartSalvador" >Salvador StewartSalvador StewartSalvador StewartSalvador </span>
             </div>
             <div className='user-card__profession'>
               <span>Leading specialist </span>
@@ -197,4 +184,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

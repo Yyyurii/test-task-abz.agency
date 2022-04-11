@@ -14,52 +14,7 @@
 
 //header---------------------------------
 
-.header {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        height: 60px;
 
-        @media (max-width: ($md2 + px)) {
-            margin: 0 60px;
-        }
-        @media (max-width: ($md3 + px)) {
-            margin: 0 32px;
-        }
-        @media (max-width: ($md4 + px)) {
-            margin: 0;
-        }
-    }
-
-    &__btns-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.button {
-    background-color: $primaryColor;
-    padding: 4px 0px;
-    width: 100px;
-    border-radius: 80px;
-    &:hover {
-        background-color: #ffe302;
-    }
-
-    &.button_show-more {
-        width: 120px;
-    }
-
-    &.button_disabled {
-        background-color: #b4b4b4;
-    }
-}
 
 //main img-------------
 
