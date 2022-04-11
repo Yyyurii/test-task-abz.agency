@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import AbzAgencyService from '../../services/AbzAgencyService';
 
 import './postMethod.scss';
 
 function PostMethod() {
+
+    const [positions, setPosition] = useState([]);
+
+    useEffect(() => {
+        getPositionsForCheckbox();
+    }, [])
+
+    const abzAgencyService = new AbzAgencyService();
+
+    const onPositionLoaded = (newPosition) => {
+        setPosition(positions => positions = newPosition.positions)
+    }
+
+    const getPositionsForCheckbox = (offset) => {
+        abzAgencyService
+            .getPositions(offset)
+            .then(onPositionLoaded)
+            .catch(error => console.log(error))
+    }
+
+    function renderPosition(arr) {
+        const positionsItems = arr.map((item, i) => {
+            return (
+                <div key={item.id}>
+                    <input type='radio' id={item.name} name='position' defaultChecked={i === 0 ? true : false} />
+                    <label htmlFor={item.name}>{item.name}</label>
+                </div>
+            )
+        })
+
+        return (
+                positionsItems
+        )
+    }
+
+    const renderPositins = renderPosition(positions);
+
     return (
         <section className='post-method _container'>
             <span className='heading'>Working with POST request</span>
@@ -17,25 +55,8 @@ function PostMethod() {
                     <div className='form__checkbox-container'>
                         <p>Select your position</p>
 
-                        <div>
-                            <input type="checkbox" id="frontend" name="frontend" defaultChecked />
-                            <label htmlFor="frontend">Frontend developer</label>
-                        </div>
+                        {renderPositins}
 
-                        <div>
-                            <input type="checkbox" id="backend" name="backend" />
-                            <label htmlFor="backend">Backend developer</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="designer" name="designer" />
-                            <label htmlFor="designer">Designer</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="qa" name="qa" />
-                            <label htmlFor="designer">QA</label>
-                        </div>
                     </div>
 
                     <div className='form__upload'>

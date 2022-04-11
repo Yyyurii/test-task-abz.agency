@@ -33,7 +33,7 @@ function GetMethod() {
       .then(onUserListLoaded)
       .catch(error => console.log(error))
   }
-
+  
   const addDefaultSrc = (e) => {
     e.currentTarget.src = require('../../assets/images/photo-cover.svg').default ;
   }
