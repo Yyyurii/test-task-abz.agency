@@ -6,6 +6,7 @@ import GetMethod from '../getMethod';
 import PostMethod from '../postMethod';
 
 function App() {
+
   return (
     <div className='App'>
 
