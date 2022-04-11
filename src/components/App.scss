@@ -13,7 +13,23 @@
 }
 
 //header---------------------------------
+.button {
+    background-color: $primaryColor;
+    padding: 4px 0px;
+    width: 100px;
+    border-radius: 80px;
+    &:hover {
+        background-color: #ffe302;
+    }
 
+    &.button_show-more {
+        width: 120px;
+    }
+
+    &.button_disabled {
+        background-color: #b4b4b4;
+    }
+}
 
 
 //main img-------------
@@ -24,108 +40,10 @@
     text-align: center;
 }
 
-.main-img {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/Rectangle.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 650px;
 
-    @media (max-width: ($md3 + px)) {
-        height: 500px;
-        padding: 0px 16px;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        max-width: 380px;
-        margin: 0 auto;
-        color: white;
-        text-align: center;
-
-        .button {
-            margin: 0 auto;
-        }
-    }
-
-    &__title {
-        margin: 0 0 21px;
-    }
-
-    &__text {
-        margin: 0 0 32px;
-    }
-}
 
 //method-get ----------------
-.get-method {
-    margin: 140px auto 50px;
-    text-align: center;
 
-    .heading {
-        @media (max-width: ($md2 + px)) {
-            margin: 0px 60px;
-        }
-
-        @media (max-width: ($md3 + px)) {
-            margin: 0px 32px;
-        }
-
-        @media (max-width: ($md4 + px)) {
-            margin: 0px 16px;
-        }
-    }
-
-    &__content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 29px;
-        margin: 50px 0;
-
-        span {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            display: block;
-        }
-
-        @media (max-width: ($md2 + px)) {
-            margin: 50px 60px;
-        }
-
-        @media (max-width: ($md3 + px)) {
-            margin: 50px 32px;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
-
-        @media (max-width: ($md4 + px)) {
-            margin: 50px 16px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-    }
-}
-
-.user-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 370px;
-    width: 100%;
-    min-width: 0;
-    background-color: #ffffff;
-    border-radius: 10px;
-
-    &__photo,
-    &__name {
-        margin: 0 0 20px;
-    }
-}
 
 //post method -------------
 .post-method {

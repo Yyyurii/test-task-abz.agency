@@ -28,21 +28,3 @@
     display: flex;
     align-items: center;
 }
-
-.button {
-    background-color: $primaryColor;
-    padding: 4px 0px;
-    width: 100px;
-    border-radius: 80px;
-    &:hover {
-        background-color: #ffe302;
-    }
-
-    &.button_show-more {
-        width: 120px;
-    }
-
-    &.button_disabled {
-        background-color: #b4b4b4;
-    }
-}

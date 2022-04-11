@@ -1,8 +1,8 @@
 import './App.scss';
 
 import Header from './header';
-
-import userPhoto from '../assets/images/photo-cover.svg';
+import MainImg from './mainImg';
+import GetMethod from './getMethod/GetMethod';
 
 function App() {
   return (
@@ -10,129 +10,9 @@ function App() {
 
       <Header />
 
-      <section className='main-img _container'>
+      <MainImg />
 
-        <div className='main-img__content'>
-          <span className='main-img__title heading'>Test assignment for front-end developer</span>
-          <span className='main-img__text'>What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.</span>
-
-          <button className='button'>Sing up</button>
-        </div>
-
-      </section>
-
-      <section className='get-method _container'>
-        <span className='heading'>Working with GET request</span>
-
-        <div className='get-method__content'>
-
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span title="Salvador StewartSalvador StewartSalvador StewartSalvador" >Salvador StewartSalvador StewartSalvador StewartSalvador </span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span>Salvador Stewart</span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span>Salvador Stewart</span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span>Salvador Stewart</span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span>Salvador Stewart</span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-          <article className='user-card'>
-            <div className='user-card__photo'>
-              <img src={userPhoto} alt="user photo" />
-            </div>
-            <div className='user-card__name'>
-              <span>Salvador Stewart</span>
-            </div>
-            <div className='user-card__profession'>
-              <span>Leading specialist </span>
-            </div>
-            <div className='user-card__email'>
-              <span>frontend_develop@gmail.com</span>
-            </div>
-            <div className='user-card__phone'>
-              <span>+38 (098) 278 44 24</span>
-            </div>
-          </article>
-
-        </div>
-        <button className='button button_show-more'>Show more</button>
-
-      </section>
+      <GetMethod />
 
       <section className='post-method _container'>
         <span className='heading'>Working with POST request</span>
