@@ -1,5 +1,5 @@
 class AbzAgencyService {
-    _apiBase = 'https://frontend-test-assignment-api.abz.agency/api/v';
+    _apiBase = 'https://frontend-test-assignment-api.abz.agency/api/v1';
     _offsetBase = 6;
 
     // https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=5
