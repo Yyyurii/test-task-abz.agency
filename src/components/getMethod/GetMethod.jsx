@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AbzAgencyService from '../../services/AbzAgencyService';
 
 import Preloader from '../preloader/Preloader';
+import ErrorMessage from '../errorMessage/ErrorMessage'
 
 import './getMethod.scss';
 
@@ -82,7 +83,7 @@ function GetMethod() {
 
   const userListItems = renderUserList(userList);
   const preloader = loading ? <Preloader /> : null;
-  // const errorMessage = error ? <ErrorMessage /> : null;
+  const errorMessage = error ? <ErrorMessage /> : null;
   const content = !(loading || error) ? userListItems : null;
 
   return (
@@ -90,6 +91,7 @@ function GetMethod() {
       <span className='heading'>Working with GET request</span>
 
       {content}
+      {errorMessage}
       {preloader}
 
       <button
