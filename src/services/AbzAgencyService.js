@@ -1,6 +1,7 @@
 class AbzAgencyService {
     _apiBase = 'https://frontend-test-assignment-api.abz.agency/api/v1';
     _offsetBase = 6;
+    _page = 1;
 
     // https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=5
 
@@ -14,8 +15,8 @@ class AbzAgencyService {
         return await res.json();
     }
 
-    getAllUsers = async (offset = this._offsetBase) => {
-        const res = await this.getResource(`${this._apiBase}/users?page=1&count=${offset}`);
+    getAllUsers = async (offset = this._offsetBase, page = this._page) => {
+        const res = await this.getResource(`${this._apiBase}/users?page=${page}&count=${offset}`);
         return res.users.map(this._transformUser);
     }
 

@@ -17,13 +17,12 @@ function GetMethod() {
   const abzAgencyService = new AbzAgencyService();
 
   useEffect(() => {
-
-    getUserList();
-
+    getUserList(offset);
   }, [])
 
   const onUserListLoaded = (newUserList) => {
     setUserList(newUserList);
+    
     setLoading(false);
     setOffset(offset => offset + 6);
   }
@@ -38,6 +37,7 @@ function GetMethod() {
   }
 
   const getUserList = (offset) => {
+    onUserLoading();
     abzAgencyService
       .getAllUsers(offset)
       .then(onUserListLoaded)

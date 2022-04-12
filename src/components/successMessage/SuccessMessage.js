@@ -1,4 +1,4 @@
-import img from '../../assets/images/icons/success-inage.svg';
+import img from '../../assets/images/success-image.svg';
 
 import './successMessage.scss';
 
