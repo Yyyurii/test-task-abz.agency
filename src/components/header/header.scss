@@ -27,4 +27,11 @@
 .logo {
     display: flex;
     align-items: center;
+
+    &__img {
+        img {
+            width: 144px;
+            height: 36px;
+        }
+    }
 }
