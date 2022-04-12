@@ -21,6 +21,7 @@ class AbzAgencyService {
 
     getPositions = async () => {
         const res = await this.getResource(`${this._apiBase}/positions`);
+        console.log(res);
         return res;
     }
 
