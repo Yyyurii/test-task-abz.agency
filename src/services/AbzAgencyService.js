@@ -3,8 +3,6 @@ class AbzAgencyService {
     _offsetBase = 6;
     _page = 1;
 
-    // https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=5
-
     getResource = async (url) => {
         let res = await fetch(url);
 
@@ -22,7 +20,6 @@ class AbzAgencyService {
 
     getPositions = async () => {
         const res = await this.getResource(`${this._apiBase}/positions`);
-        console.log(res);
         return res;
     }
 

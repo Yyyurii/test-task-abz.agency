@@ -105,9 +105,7 @@ function PostMethod() {
                 };
                 return response.json();
             })
-            .then(function (data) {
-                console.log(data);
-            }).catch(function (error) { alert(error) });
+            .catch(function (error) { alert(error) });
     };
 
     const sectionPostMethod = () => {
@@ -131,8 +129,6 @@ function PostMethod() {
                             className='form__input-info'
                             name='email'
                             placeholder='Email'
-                            // pattern={vvaa}
-                            required
                             value={email}
                             onChange={(e) => { setEmail(e.target.value) }} />
                         <input

@@ -145,9 +145,3 @@ input[type="radio"]:checked::after {
 input:invalid {
     border: 1px solid #cb3d40;
 }
-
-form:valid {
-    &button.button-disabled {
-        background-color: aqua;
-    }
-}

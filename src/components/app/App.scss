@@ -12,7 +12,6 @@
     }
 }
 
-//header---------------------------------
 .button {
     background-color: $primaryColor;
     padding: 4px 0px;
@@ -31,19 +30,22 @@
     }
 }
 
-
-//main img-------------
-
 .heading {
     font-size: 40px;
     line-height: 40px;
     text-align: center;
 }
 
-
-
-//method-get ----------------
-
-
-//post method -------------
-
+._container {
+	max-width: $maxWidthContainer + px;
+	width: 100%;
+	margin: 0 auto;
+	
+	@media (max-width: ($md2 + px)) {
+		max-width: 1024px;
+	}
+	@media (max-width: ($md3 + px)) {
+		max-width: none;
+		padding: 0px 16px;
+	}
+}
