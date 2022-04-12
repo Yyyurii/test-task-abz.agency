@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AbzAgencyService from '../../services/AbzAgencyService';
 
+import Preloader from '../preloader/Preloader';
+
 import './getMethod.scss';
 
 function GetMethod() {
@@ -8,6 +10,8 @@ function GetMethod() {
   const [userList, setUserList] = useState([]);
   const [offset, setOffset] = useState(6);
   const [userEnded, setUserEnded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const abzAgencyService = new AbzAgencyService();
 
@@ -18,24 +22,29 @@ function GetMethod() {
   }, [])
 
   const onUserListLoaded = (newUserList) => {
-
-    if (newUserList.length === 89) {
-      setUserEnded(true);
-    }
-
     setUserList(newUserList);
+    setLoading(false);
     setOffset(offset => offset + 6);
+  }
+
+  const onUserLoading = () => {
+    setLoading(true);
+  }
+
+  const onError = () => {
+    setLoading(false);
+    setError(true);
   }
 
   const getUserList = (offset) => {
     abzAgencyService
       .getAllUsers(offset)
       .then(onUserListLoaded)
-      .catch(error => console.log(error))
+      .catch(onError)
   }
 
   const addDefaultSrc = (e) => {
-    e.currentTarget.src = require('../../assets/images/photo-cover.svg').default ;
+    e.currentTarget.src = require('../../assets/images/photo-cover.svg').default;
   }
 
   function renderUserList(arr) {
@@ -72,12 +81,16 @@ function GetMethod() {
   }
 
   const userListItems = renderUserList(userList);
+  const preloader = loading ? <Preloader /> : null;
+  // const errorMessage = error ? <ErrorMessage /> : null;
+  const content = !(loading || error) ? userListItems : null;
 
   return (
     <section className='get-method _container'>
       <span className='heading'>Working with GET request</span>
 
-      {userListItems}
+      {content}
+      {preloader}
 
       <button
         className='button button_show-more'
