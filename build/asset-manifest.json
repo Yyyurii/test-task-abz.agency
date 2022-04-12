@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/test-task-abz.agency/static/css/main.7ccdf008.css",
-    "main.js": "/test-task-abz.agency/static/js/main.6a67cfe0.js",
-    "static/media/Rectangle.jpg": "/test-task-abz.agency/static/media/Rectangle.cf636f23d971b2f4c960.jpg",
+    "main.css": "/test-task-abz.agency/static/css/main.95f1b9ae.css",
+    "main.js": "/test-task-abz.agency/static/js/main.4abca017.js",
+    "static/media/Rectangle.webp": "/test-task-abz.agency/static/media/Rectangle.5212e2e87f82e33f42d2.webp",
     "static/media/Nunito-Regular.ttf": "/test-task-abz.agency/static/media/Nunito-Regular.fd0c54f3619265ac2f1e.ttf",
     "static/media/success-image.svg": "/test-task-abz.agency/static/media/success-image.0d3202ba11b04fa7364b0f83ce42aea5.svg",
     "static/media/Logo.svg": "/test-task-abz.agency/static/media/Logo.8bb55362d01d55393ccc5476d96f0c14.svg",
     "static/media/photo-cover.svg": "/test-task-abz.agency/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
     "static/media/error.svg": "/test-task-abz.agency/static/media/error.3dfd4c7e28fc1ab2fbc23ed0532f2d41.svg",
     "index.html": "/test-task-abz.agency/index.html",
-    "main.7ccdf008.css.map": "/test-task-abz.agency/static/css/main.7ccdf008.css.map",
-    "main.6a67cfe0.js.map": "/test-task-abz.agency/static/js/main.6a67cfe0.js.map"
+    "main.95f1b9ae.css.map": "/test-task-abz.agency/static/css/main.95f1b9ae.css.map",
+    "main.4abca017.js.map": "/test-task-abz.agency/static/js/main.4abca017.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ccdf008.css",
-    "static/js/main.6a67cfe0.js"
+    "static/css/main.95f1b9ae.css",
+    "static/js/main.4abca017.js"
   ]
 }
