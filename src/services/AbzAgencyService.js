@@ -6,11 +6,11 @@ class AbzAgencyService {
 
     getResource = async (url) => {
         let res = await fetch(url);
-    
+
         if (!res.ok) {
             throw new Error(`Could not fetch ${url}, status: ${res.status}`);
         }
-    
+
         return await res.json();
     }
 
@@ -21,7 +21,11 @@ class AbzAgencyService {
 
     getPositions = async () => {
         const res = await this.getResource(`${this._apiBase}/positions`);
-        console.log(res);
+        return res;
+    }
+
+    getToken = async () => {
+        const res = await this.getResource(`${this._apiBase}/token`);
         return res;
     }
 

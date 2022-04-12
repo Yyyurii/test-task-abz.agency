@@ -20,10 +20,10 @@ function GetMethod() {
   const onUserListLoaded = (newUserList) => {
 
     if (newUserList.length === 89) {
-      setUserEnded(userEnded => userEnded = true);
+      setUserEnded(true);
     }
 
-    setUserList(userList => userList = newUserList);
+    setUserList(newUserList);
     setOffset(offset => offset + 6);
   }
 
@@ -33,7 +33,7 @@ function GetMethod() {
       .then(onUserListLoaded)
       .catch(error => console.log(error))
   }
-  
+
   const addDefaultSrc = (e) => {
     e.currentTarget.src = require('../../assets/images/photo-cover.svg').default ;
   }
