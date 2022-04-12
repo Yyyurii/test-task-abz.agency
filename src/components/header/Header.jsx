@@ -16,8 +16,8 @@ function Header() {
           </div>
 
           <div className='header__btns-container'>
-            <button className='button'>Users</button>
-            <button className='button'>Sing up</button>
+            <a href="#getMethod"><button className='button'>Users</button></a>
+            <a href="#postMethod"><button className='button'>Sing up</button></a>
           </div>
 
         </div>

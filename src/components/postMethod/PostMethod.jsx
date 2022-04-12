@@ -110,7 +110,7 @@ function PostMethod() {
 
     const sectionPostMethod = () => {
         return (
-            <section className='post-method _container' >
+            <section id='postMethod' className='post-method _container' >
                 <span className='heading'>Working with POST request</span>
 
                 <div className='post-method__form'>

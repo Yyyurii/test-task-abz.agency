@@ -87,7 +87,7 @@ function GetMethod() {
   const content = !(loading || error) ? userListItems : null;
 
   return (
-    <section className='get-method _container'>
+    <section id='getMethod' className='get-method _container'>
       <span className='heading'>Working with GET request</span>
 
       {content}
