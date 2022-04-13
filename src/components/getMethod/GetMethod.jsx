@@ -10,6 +10,7 @@ function GetMethod() {
 
   const [userList, setUserList] = useState([]);
   const [offset, setOffset] = useState(6);
+  const [page, setPage] = useState(1);
   const [userEnded, setUserEnded] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -17,14 +18,14 @@ function GetMethod() {
   const abzAgencyService = new AbzAgencyService();
 
   useEffect(() => {
-    getUserList(offset);
+    getUserList(offset, page);
   }, [])
 
   const onUserListLoaded = (newUserList) => {
-    setUserList(newUserList);
+    setUserList(userList => [...userList, ...newUserList]);
     
     setLoading(false);
-    setOffset(offset => offset + 6);
+    setPage(page => page + 1);
   }
 
   const onUserLoading = () => {
@@ -36,10 +37,10 @@ function GetMethod() {
     setError(true);
   }
 
-  const getUserList = (offset) => {
+  const getUserList = (offset, page) => {
     onUserLoading();
     abzAgencyService
-      .getAllUsers(offset)
+      .getAllUsers(offset, page)
       .then(onUserListLoaded)
       .catch(onError)
   }
@@ -97,7 +98,7 @@ function GetMethod() {
       <button
         className='button button_show-more'
         style={{ 'display': userEnded ? 'none' : 'inline-block' }}
-        onClick={() => getUserList(offset)}>
+        onClick={() => getUserList(offset, page)}>
         Show more
       </button>
 
