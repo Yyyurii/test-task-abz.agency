@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-task-abz.agency/static/css/main.95f1b9ae.css",
-    "main.js": "/test-task-abz.agency/static/js/main.8b591e21.js",
+    "main.js": "/test-task-abz.agency/static/js/main.ec1ca9e1.js",
     "static/media/Rectangle.webp": "/test-task-abz.agency/static/media/Rectangle.5212e2e87f82e33f42d2.webp",
     "static/media/Nunito-Regular.ttf": "/test-task-abz.agency/static/media/Nunito-Regular.fd0c54f3619265ac2f1e.ttf",
     "static/media/success-image.svg": "/test-task-abz.agency/static/media/success-image.0d3202ba11b04fa7364b0f83ce42aea5.svg",
@@ -10,10 +10,10 @@
     "static/media/error.svg": "/test-task-abz.agency/static/media/error.3dfd4c7e28fc1ab2fbc23ed0532f2d41.svg",
     "index.html": "/test-task-abz.agency/index.html",
     "main.95f1b9ae.css.map": "/test-task-abz.agency/static/css/main.95f1b9ae.css.map",
-    "main.8b591e21.js.map": "/test-task-abz.agency/static/js/main.8b591e21.js.map"
+    "main.ec1ca9e1.js.map": "/test-task-abz.agency/static/js/main.ec1ca9e1.js.map"
   },
   "entrypoints": [
     "static/css/main.95f1b9ae.css",
-    "static/js/main.8b591e21.js"
+    "static/js/main.ec1ca9e1.js"
   ]
 }
